@@ -173,6 +173,7 @@ const SignupForm = () => {
               onChange={handleOnChange}
               value={confirmPassword}
               placeholder="Confirm Password"
+              minLength="8"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)"  title="Password must be at least 8 characters and include at least one lowercase letter, one uppercase letter, one number, and one special character."  
               style={{
                 boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
               }}
