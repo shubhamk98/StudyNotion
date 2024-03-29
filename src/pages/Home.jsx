@@ -24,7 +24,7 @@ const Home = () => {
         <div className="mx-5 md:mx-36  items-center gap-5 justify-center py-14">
           <div className=" flex flex-col lg:flex-row justify-between gap-5 lg:gap-10">
             <div className="text-3xl md:text-4xl font-semibold ">
-              Get the Skills you need for a{" "}
+              Get the Skills you need for a
               <HighlightText text={"Job that is in demand"} />
             </div>
             <div className="flex flex-col gap-7">
@@ -44,9 +44,9 @@ const Home = () => {
 
       <div className="relative mx-auto my-20 flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 bg-richblack-900 text-white">
         <InstructorSection />
-        <h1 className="text-center text-4xl font-semibold mt-8">
-          {" "}
-          Review from Other Learners{" "}
+        <h1 className="text-center  text-4xl font-semibold mt-8">
+          
+          Review from Other Learners
         </h1>
         <ReviewSlider />
       </div>

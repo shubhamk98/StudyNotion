@@ -32,7 +32,7 @@ const ReviewSlider = () => {
       <div className="my-[50px] h-[184px] max-w-maxContentTab lg:max-w-maxContent">
         <Swiper
           className="w-full "
-          slidesPerView={3}
+          slidesPerView={1}
           spaceBetween={25}
           loop={reviews.length > 3}
           freeMode={true}
@@ -91,6 +91,7 @@ const ReviewSlider = () => {
             );
           })}
         </Swiper>
+        <div className="text-richblack-600 text-center mt-2">Swipe</div>
       </div>
     </div>
   );
