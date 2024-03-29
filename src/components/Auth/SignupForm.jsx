@@ -4,10 +4,9 @@ import Tab from "../Common/Tab.jsx";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import toast from "react-hot-toast";
-import {sendOtp} from "../../services/operations/authApi.js"
+import { sendOtp } from "../../services/operations/authApi.js";
 import { setSignupData } from "../../slices/authSlice.js";
-import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai"
-
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 const SignupForm = () => {
   const navigate = useNavigate();
@@ -144,7 +143,8 @@ const SignupForm = () => {
               onChange={handleOnChange}
               value={password}
               placeholder="Enter Password"
-              minLength="8"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)"  title="Password must be at least 8 characters and include at least one lowercase letter, one uppercase letter, one number, and one special character."  
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}"
+              title="Password must be at least 8 characters and include at least one lowercase letter, one uppercase letter, one number, and one special character."
               style={{
                 boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
               }}
@@ -173,7 +173,6 @@ const SignupForm = () => {
               onChange={handleOnChange}
               value={confirmPassword}
               placeholder="Confirm Password"
-              minLength="8"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)"  title="Password must be at least 8 characters and include at least one lowercase letter, one uppercase letter, one number, and one special character."  
               style={{
                 boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
               }}
